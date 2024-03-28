@@ -1,0 +1,37 @@
+import { Vector2Like } from "../vector/Vector2";
+import { Matrix2Like } from "./Matrix2";
+export declare const UNIT_MATRIX3_DATA: number[];
+export type Matrix3Like = Matrix3 | number[] | Float32Array;
+export declare class Matrix3 extends Float32Array {
+    static readonly UNIT_MATRIX3: Matrix3;
+    static clone: (source: Matrix3Like) => Matrix3;
+    static cofactor00: (a: Matrix3Like) => number;
+    static cofactor01: (a: Matrix3Like) => number;
+    static cofactor02: (a: Matrix3Like) => number;
+    static cofactor10: (a: Matrix3Like) => number;
+    static cofactor11: (a: Matrix3Like) => number;
+    static cofactor12: (a: Matrix3Like) => number;
+    static cofactor20: (a: Matrix3Like) => number;
+    static cofactor21: (a: Matrix3Like) => number;
+    static cofactor22: (a: Matrix3Like) => number;
+    static create: () => Matrix3;
+    static determinant: (a: Matrix3Like) => number;
+    static fromArray: <T extends Matrix2Like>(source: Matrix3Like, out?: T) => T;
+    static fromMatrix2: <T extends Matrix2Like>(mat4: Matrix2Like, out?: T) => T;
+    static fromMatrix4: <T extends Matrix2Like>(mat4: Matrix3Like, out?: T) => T;
+    static fromRotation: <T extends Matrix2Like>(rad: number, out?: T) => T;
+    static fromScaling: <T extends Matrix2Like>(v: Vector2Like, out?: T) => T;
+    static fromSkew: <T extends Matrix2Like>(v: Vector2Like, out?: T) => T;
+    static fromTranslation: <T extends Matrix2Like>(v: Vector2Like, out?: T) => T;
+    static identity: <T extends Matrix2Like>(out?: T) => T;
+    static invert: <T extends Matrix2Like>(a: Matrix3Like, out?: T) => T | null;
+    static multiply: <T extends Matrix2Like>(a: Matrix3Like, b: Matrix3Like, out?: T) => T;
+    static multiplyRotationMatrix: (a: Matrix3Like, b: Matrix3Like, out?: Matrix3) => Matrix3;
+    static multiplyScaleMatrix: <T extends Matrix2Like>(a: Matrix3Like, b: Matrix3Like, out?: T) => T;
+    static multiplyTranslateMatrix: <T extends Matrix2Like>(a: Matrix3Like, b: Matrix3Like, out?: T) => T;
+    static rotate: <T extends Matrix2Like>(a: Matrix3Like, rad: number, out?: T) => T;
+    static scale: <T extends Matrix2Like>(a: Matrix3Like, v: Vector2Like, out?: T) => T;
+    static translate: <T extends Matrix2Like>(a: Matrix3Like, v: Vector2Like, out?: T) => T;
+    static transpose: <T extends Matrix2Like>(a: Matrix3Like, out?: T) => T;
+    constructor(data?: Matrix3Like);
+}

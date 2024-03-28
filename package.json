@@ -1,0 +1,79 @@
+{
+  "name": "veroamet",
+  "version": "1.0.0",
+  "description": "A math library written in TS.",
+  "main": "build/Mathx.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RusselYost/veroamet.git"
+  },
+  "jsnext:main": "build/Mathx.module.js",
+  "module": "build/Mathx.module.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "LICENSE",
+    "package.json",
+    "README.md",
+    "src"
+  ],
+  "directories": {
+    "docs": "docs",
+    "examples": "examples",
+    "src": "src"
+  },
+  "keywords": [
+    "math",
+    "illo",
+    "enim",
+    "valeera",
+    "repudiandae",
+    "library"
+  ],
+  "author": "DarrinOrtiz",
+  "license": "MIT",
+  "devDependencies": {
+    "@pixi/jsdoc-template": "^2.6.0",
+    "@types/chai": "latest",
+    "@types/mocha": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "chai": "latest",
+    "concurrently": "latest",
+    "eslint": "latest",
+    "eslint-config-valeera": ">=0.1.4",
+    "eslint-plugin-html": "latest",
+    "eslint-plugin-prettier": "latest",
+    "eslint-plugin-tslint": "latest",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "esm": "latest",
+    "jsdoc": "latest",
+    "jsdoc-plugin-typescript": "latest",
+    "mocha": "latest",
+    "nyc": "latest",
+    "prettier": "latest",
+    "rollup": "latest",
+    "rollup-plugin-json": "latest",
+    "rollup-plugin-typescript2": "latest",
+    "ts-node": "latest",
+    "tslib": "latest",
+    "typescript": "latest"
+  },
+  "jspm": {
+    "files": [
+      "package.json",
+      "LICENSE",
+      "README.md",
+      "build/Mathx.js",
+      "build/Mathx.module.js"
+    ],
+    "directories": {}
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/RusselYost/veroamet.git/issues"
+  },
+  "homepage": "https://github.com/RusselYost/veroamet.git"
+}
